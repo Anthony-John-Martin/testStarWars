@@ -1,0 +1,261 @@
+body{
+	margin: 0;
+}
+
+article{
+	padding: 5vw;
+	/*font-size: 2vw;*/
+	font-size: 1.8em;
+}
+
+footer{
+	background-color: #181818;
+	padding: 5vw;
+
+	background-image: url("../img/darthvader_2x.jpg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+header nav{
+	font-size: 1.4em;
+	font-weight: bold;
+	z-index: 10;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	background: rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 1.2em;
+}
+
+nav ul li a{
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+h1, h2, h3{
+	text-align: center;
+}
+
+cite{
+	font-weight: bold;
+}
+
+.parallax-header{
+	position: relative;
+}
+.parallax-header img#logo{
+	position: absolute;
+	margin: auto;
+	top: 0; left: 0; bottom: 0; right: 0;
+	max-width: 100%;
+	height: auto;
+}
+
+#section1 aside{
+	padding: 0 10vw 0 10vw;
+
+	width: 300px;
+	height: 600px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 7%;
+}
+#section1 section{
+	display: flex;
+	flex-direction: column;
+}
+#section1 h2{
+	margin-top: 0;
+	text-align: left;
+}
+
+#section2 ul li{
+	margin-bottom: 5px;
+}
+#section2 p:nth-child(1){
+	margin-top: 0;
+}
+
+.c3po{
+	margin-right: 30px;
+}
+
+.flex{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.parallax img{
+	width: 100%;
+	height: 50vw;
+	vertical-align: middle;
+}
+
+.parallax img.storm{
+	max-height:500px;
+	height: auto;
+}
+
+#icon-mobile-menu{
+	display: none;
+}
+
+#icon-mobile-menu-close{
+	display: none;
+}
+
+
+footer{
+	color: gray;
+	text-align: center;
+	font-size: 1.5em;
+}
+.social li{
+	padding: 0 8px 0 8px;
+	display:inline;
+}
+.footer-item{
+	width: 100%;
+}
+.footer-item li{
+	margin-bottom: 15px;
+	width: 100%;
+}
+.footer-item li a{
+	color: gray;
+}
+.footer-item .social li a{
+	text-decoration: none;
+}
+
+
+
+@media (max-width: 992px) {
+
+	body{
+		text-align: center;
+	}
+
+	footer{
+		background-image: url("../img/darthvader.jpg");
+		background-size: cover;
+	}
+
+	article{
+		/*font-size: 3vw;*/
+		font-size: 1.8em;
+	}
+
+	.parallax img.storm{
+		max-height:250px;
+	}
+
+	.flex{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#section1 h2{
+		text-align: center;
+	}
+	#section1 aside{
+		display: none;
+	}
+
+
+	/*mobile menu*/
+	#mobile-nav {
+		overflow: hidden;
+		width: 100vw;
+		position: fixed;
+		top: 0;
+		text-align: center;
+		background: rgba(0, 0, 0, 0.5);
+	}
+
+	.h100{
+		height: 100vh;
+	}
+
+	#mobile-nav.menu-background{
+		background: url("../img/header-bg.png") no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position: initial;
+	}
+
+	#icon-mobile-menu{
+		float: right;
+		margin-right: 17px;
+		padding-right: 10px;
+		display: block;
+		cursor: pointer
+	}
+
+	#icon-mobile-menu-close{
+		float: left;
+		display : none;
+		margin-left: 17px;
+		position: absolute;
+		cursor: pointer
+	}
+
+	#mobile-nav #myLinks {
+		list-style-type: none;
+		display: none;
+		padding: 30px 0 0 0;
+	}
+
+	#mobile-nav a {
+		color: white;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		display: block;
+	}
+
+	#mobile-nav a.icon {
+		background: black;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.active {
+		background-color: #4CAF50;
+		color: white;
+	}
+
+	.c3po{
+		margin-right: 0;
+		max-width: 100%;
+		height: auto;
+	}
+
+
+}
+
+@media (max-width: 500px) {
+	article {
+		/*font-size: 5vw;*/
+	}
+}
